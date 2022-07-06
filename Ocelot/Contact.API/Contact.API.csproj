@@ -9,7 +9,9 @@
   </ItemGroup>
 
   <ItemGroup>
-    <Folder Include="Controllers\" />
+    <ProjectReference Include="..\ContactAPI.Infrastructure\ContactAPI.Infrastructure.csproj" />
+    <ProjectReference Include="..\ContactAPI.Models\ContactAPI.Models.csproj" />
+    <ProjectReference Include="..\ContactAPI.Services\ContactAPI.Services.csproj" />
   </ItemGroup>
 
 </Project>

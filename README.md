@@ -3,4 +3,3 @@ Under this repository you will find small sample projects that I have done about
 
 ## what's under this repository for now
 * CQRS design pattern with MediatR and onion architecture.
-* Domain driven design.

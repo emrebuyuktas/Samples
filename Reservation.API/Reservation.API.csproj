@@ -9,7 +9,8 @@
   </ItemGroup>
 
   <ItemGroup>
-    <Folder Include="Controllers\" />
+    <ProjectReference Include="..\Ocelot\ReservationAPI.Infrastructure\ReservationAPI.Infrastructure.csproj" />
+    <ProjectReference Include="..\Ocelot\ReservationAPI.Services\ReservationAPI.Services.csproj" />
   </ItemGroup>
 
 </Project>
