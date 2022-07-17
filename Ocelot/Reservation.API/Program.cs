@@ -21,7 +21,7 @@ namespace Reservation.API
                 .ConfigureWebHostDefaults(webBuilder =>
                 {
                     webBuilder.UseStartup<Startup>();
-                    webBuilder.UseUrls("http://*:9000");
+                    //webBuilder.UseUrls("http://*:9000");
                 });
     }
 }

@@ -21,7 +21,7 @@ namespace Contact.API
                 .ConfigureWebHostDefaults(webBuilder =>
                 {
                     webBuilder.UseStartup<Startup>();
-                    webBuilder.UseUrls("http://*:7000");
+                    //webBuilder.UseUrls("http://*:7000");
                 });
     }
 }
