@@ -6,3 +6,4 @@ Under this repository you will find small sample projects that I have done about
 * Domain driven design
 * Ocelot API gateway
 * MongoDb
+* RabbitMQ
