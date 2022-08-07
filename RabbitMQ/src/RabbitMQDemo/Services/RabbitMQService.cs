@@ -63,12 +63,14 @@ public class RabbitMQService:IRabbitMQService
     public string Consume(string queuName)
     {
         var consumerEvent=new EventingBasicConsumer(channel);
+        var messages = "";
         consumerEvent.Received += (ch, e) =>
         {
             var byteArray = e.Body.ToArray();
-            Encoding.UTF8.GetString(byteArray);
+            messages=Encoding.UTF8.GetString(byteArray);
+            Console.WriteLine(messages);
         };
-        var result=channel.BasicConsume(queuName, true, consumerEvent);
-        return result;
+        channel.BasicConsume(queuName, true, consumerEvent);
+        return messages;
     }
 }
